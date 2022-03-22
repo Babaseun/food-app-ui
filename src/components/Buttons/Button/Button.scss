@@ -1,0 +1,53 @@
+@import "../../../App.scss";
+
+@mixin ovalButtonStyle($backgroundColor) {
+  border-radius: 30px;
+  padding: 0.7em 3em;
+  background-color: $backgroundColor;
+  color: $text-white;
+  font-size: 0.5rem;
+  font-weight: medium;
+}
+@mixin squareButtonStyle($backgroundColor) {
+  border-radius: 10px;
+  padding: 0.7em 3em;
+  background-color: $backgroundColor;
+  color: $text-white;
+  font-size: 0.5rem;
+  font-weight: medium;
+}
+
+.oval-tomato-button {
+  @include ovalButtonStyle($tomatoColor);
+  margin-right: 2rem;
+}
+.oval-transparent-button {
+  @include ovalButtonStyle(transparent);
+}
+.square-tomato-button {
+  @include squareButtonStyle($tomatoColor);
+  margin-right: 2rem;
+}
+.square-transparent-button {
+  @include squareButtonStyle(transparent);
+}
+@media (min-width: 400px) {
+  .oval-tomato-button,
+  .oval-transparent-button {
+    font-size: 1rem;
+  }
+  .square-tomato-button,
+  .square-transparent-button {
+    font-size: 1rem;
+  }
+}
+@media (min-width: 900px) {
+  .oval-tomato-button,
+  .oval-transparent-button {
+    font-size: 1.5rem;
+  }
+  .square-tomato-button,
+  .square-transparent-button {
+    font-size: 1rem;
+  }
+}

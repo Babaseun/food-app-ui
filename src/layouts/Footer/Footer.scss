@@ -1,0 +1,39 @@
+.footer {
+  .container {
+    height: 120px;
+    max-width: 1100px;
+    margin: 0 auto;
+  }
+}
+
+.footer-contents {
+  height: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  .footer-logo {
+    display: none;
+  }
+}
+.content {
+  // Equal columns
+  flex: 1 1 0;
+}
+
+.content:nth-child(2) {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  img {
+    margin-right: 1rem;
+  }
+}
+@media (min-width: 650px) {
+  .footer-contents {
+    .footer-logo {
+      display: block;
+      height: 70%;
+      object-fit: contain;
+    }
+  }
+}

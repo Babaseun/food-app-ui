@@ -1,0 +1,50 @@
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+$text-white: #f6f6f6;
+$tomatoColor: #fa4a0c;
+$greyColor: #e4e4e4;
+$blackColor: #000000;
+$mediumBlackColor: #737373;
+
+body {
+  font-family: "Montserrat", sans-serif;
+  font-size: 16px;
+}
+.App {
+  min-height: 100vh;
+}
+.splitScreen {
+  min-height: 100vh;
+  width: 100%;
+  display: grid;
+  grid-template-columns: 10% 80% 10%;
+  grid-template-rows: 1fr;
+  grid-template-areas:
+    "sectionOne sectionOne sectionOne"
+    "sectionTwo sectionTwo sectionTwo"
+    "sectionThree sectionThree sectionThree"
+    "sectionFour sectionFour sectionFour"
+    "sectionFive sectionFive sectionFive"
+    "sectionSix sectionSix sectionSix";
+  .splitScreen__section__one {
+    grid-area: sectionOne;
+  }
+  .splitScreen__section__two {
+    grid-area: sectionTwo;
+  }
+  .splitScreenSection__three {
+    grid-area: sectionThree;
+  }
+  .splitScreenSection__four {
+    grid-area: sectionFour;
+  }
+  .splitScreenSection__five {
+    grid-area: sectionFive;
+  }
+  .splitScreenSection__six {
+    grid-area: sectionSix;
+  }
+}

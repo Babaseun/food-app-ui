@@ -1,24 +1,29 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import React from "react";
+import "./App.scss";
+import Footer from "./layouts/Footer/Footer";
+
+import Header from "./layouts/Header/Header";
+import SectionFive from "./layouts/Sections/SectionFive/SectionFive";
+import SectionFour from "./layouts/Sections/SectionFour/SectionFour";
+import SectionOne from "./layouts/Sections/SectionOne/SectionOne";
+import SectionSix from "./layouts/Sections/SectionSix/SectionSix";
+import SectionThree from "./layouts/Sections/SectionThree/SectionThree";
+import SectionTwo from "./layouts/Sections/SectionTwo/SectionTwo";
+import SplitScreen from "./SplitScreen";
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <Header />
+      <SplitScreen
+        sectionOne={SectionOne}
+        sectionTwo={SectionTwo}
+        sectionThree={SectionThree}
+        sectionFour={SectionFour}
+        sectionFive={SectionFive}
+        sectionSix={SectionSix}
+      />
+      <Footer />
     </div>
   );
 }

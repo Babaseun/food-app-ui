@@ -1,0 +1,87 @@
+@import "../../App.scss";
+.section {
+  .container {
+    max-width: 1100px;
+    margin: 3rem auto;
+    .section__title {
+      text-align: center;
+      font-family: "Poppins", sans-serif;
+    }
+    .section__columns {
+      display: flex;
+      justify-content: space-around;
+      align-items: center;
+      padding: 0 1.25rem;
+      .section__column {
+        h3 {
+          margin-top: 1rem;
+          color: $tomatoColor;
+          font-weight: bold;
+          font-size: 0.9rem;
+        }
+        h2 {
+          margin-top: 1rem;
+          font-size: 1.2rem;
+        }
+        h4 {
+          margin-top: 1rem;
+          font-size: 1rem;
+          font-style: normal;
+          font-weight: 500;
+          line-height: 2.375rem;
+          letter-spacing: 0.20000000298023224px;
+          color: $mediumBlackColor;
+        }
+        img {
+          width: 100%;
+        }
+      }
+    }
+  }
+}
+@media (max-width: 430px) {
+  .section {
+    .container {
+      .section__columns {
+        flex-direction: column;
+        .section__column {
+          h2 {
+            font-size: 1.2rem;
+          }
+          h4 {
+            font-size: 1rem;
+          }
+          h3{
+            text-align: center;
+          }
+        }
+        .text-column{
+          order:1;
+        }
+        .img-column{
+          order:2;
+        }
+      }
+    }
+  }
+}
+
+@media (min-width: 650px) {
+  .section {
+    .container {
+      .section__columns {
+        .section__column {
+          h3 {
+            font-size: 1.5rem;
+          }
+          h2 {
+            font-size: 2.5rem;
+          }
+          h4 {
+            font-size: 1.5rem;
+          }
+        }
+      }
+    }
+  }
+}

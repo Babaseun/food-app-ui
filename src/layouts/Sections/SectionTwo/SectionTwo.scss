@@ -1,0 +1,25 @@
+@import "../../../App.scss";
+
+.sectionTwo__container {
+  width: 100%;
+  .section__two__images {
+    border-bottom: 3px solid $greyColor;
+    max-width: 1100px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    .section__two__image__one {
+      transform: translate(20%, -30%);
+    }
+    img {
+      width: 100%;
+    }
+    .section__two__image__two {
+      transform: translate(-30%, -10%);
+    }
+    img {
+      width: 100%;
+    }
+  }
+}
+

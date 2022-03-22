@@ -1,0 +1,67 @@
+@import "../../../App.scss";
+
+.sectionSix {
+  background-image: url("../../../assets/Rectangle 47 (1).png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  min-height: 416px;
+  .container {
+    max-width: 1100px;
+    margin: 0 auto;
+    .sectionSix__contents {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      min-height: 500px;
+      align-items: center;
+      padding: 1rem;
+      h2 {
+        font-size: 1rem;
+        font-weight: medium;
+        letter-spacing: 0.20000000298023224px;
+        color: $text-white;
+      }
+      h4 {
+        font-family: Montserrat;
+        font-weight: 500;
+        letter-spacing: 0.20000000298023224px;
+        color: $text-white;
+        margin-top: 2rem;
+      }
+      .sectionSix__buttons{
+        margin-top: 2rem;
+
+      }
+    }
+  }
+}
+@media screen and (min-width:400px){
+  .sectionSix {
+    .container {
+      .sectionSix__contents {
+        h2 {
+          font-size: 1rem;
+        }
+        h4 {
+          font-size: 1.5rem;
+         
+        }
+      }
+    }
+  }
+}
+@media screen and (min-width:650px){
+  .sectionSix {
+    .container {
+      .sectionSix__contents {
+        h2 {
+          font-size: 2rem;
+        }
+        h4 {
+          font-size: 1.5rem;
+         
+        }
+      }
+    }
+  }
+}
